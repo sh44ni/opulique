@@ -1,0 +1,27 @@
+﻿.next/types/validator.ts(333,31): error TS2344: Type 'typeof import("A:/PROJEKTS/products/New folder/opulique/app/api/admin/brands/[id]/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/admin/brands/[id]">'.
+  Types of property 'GET' are incompatible.
+    Type '(request: NextRequest, { params }: { params: { id: string; }; }) => Promise<NextResponse<{ error: string; }> | NextResponse<{ id: string; name: string; slug: string; cover_image: string | null; sort_order: number; is_active: boolean | null; created_at: Date | null; updated_at: Date | null; }>>' is not assignable to type '(request: NextRequest, context: { params: Promise<{ id: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ id: string; }>; }' is not assignable to type '{ params: { id: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'id' is missing in type 'Promise<{ id: string; }>' but required in type '{ id: string; }'.
+app/(storefront)/product/[slug]/reviews/page.tsx(77,75): error TS2339: Property 'rating' does not exist on type 'Product'.
+app/(storefront)/product/[slug]/reviews/page.tsx(80,72): error TS2339: Property 'review_count' does not exist on type 'Product'.
+app/api/reviews/route.ts(169,21): error TS2353: Object literal may only specify known properties, and 'rating' does not exist in type '{ brand?: string | SQL<unknown> | PgColumn<ColumnBaseConfig<ColumnDataType, string>, {}, {}> | undefined; name?: string | SQL<unknown> | PgColumn<...> | undefined; ... 13 more ...; updated_at?: SQL<...> | ... 3 more ... | undefined; }'.
+clean-reviews.ts(19,13): error TS2353: Object literal may only specify known properties, and 'rating' does not exist in type '{ brand?: string | SQL<unknown> | PgColumn<ColumnBaseConfig<ColumnDataType, string>, {}, {}> | undefined; name?: string | SQL<unknown> | PgColumn<...> | undefined; ... 13 more ...; updated_at?: SQL<...> | ... 3 more ... | undefined; }'.
+components/storefront/ProductActions.tsx(21,38): error TS2339: Property 'sizes' does not exist on type 'Product'.
+components/storefront/ProductActions.tsx(21,55): error TS2339: Property 'sizes' does not exist on type 'Product'.
+components/storefront/ProductActions.tsx(27,52): error TS2339: Property 'sizes' does not exist on type 'Product'.
+components/storefront/ProductActions.tsx(27,69): error TS2339: Property 'sizes' does not exist on type 'Product'.
+components/storefront/ProductActions.tsx(27,96): error TS2339: Property 'sizes' does not exist on type 'Product'.
+components/storefront/ProductActions.tsx(39,38): error TS2339: Property 'sizes' does not exist on type 'Product'.
+components/storefront/ProductActions.tsx(39,55): error TS2339: Property 'sizes' does not exist on type 'Product'.
+components/storefront/ProductActions.tsx(44,52): error TS2339: Property 'sizes' does not exist on type 'Product'.
+components/storefront/ProductActions.tsx(44,69): error TS2339: Property 'sizes' does not exist on type 'Product'.
+components/storefront/ProductActions.tsx(44,96): error TS2339: Property 'sizes' does not exist on type 'Product'.
+components/storefront/ProductActions.tsx(52,22): error TS2339: Property 'sizes' does not exist on type 'Product'.
+components/storefront/ProductActions.tsx(52,39): error TS2339: Property 'sizes' does not exist on type 'Product'.
+components/storefront/ProductActions.tsx(59,34): error TS2339: Property 'sizes' does not exist on type 'Product'.
+components/storefront/ProductActions.tsx(59,45): error TS7006: Parameter 'size' implicitly has an 'any' type.
+scripts/import-csv.ts(5,23): error TS2307: Cannot find module 'csv-parse/sync' or its corresponding type declarations.
+scripts/import-csv.ts(84,53): error TS2488: Type '{}' must have a '[Symbol.iterator]()' method that returns an iterator.

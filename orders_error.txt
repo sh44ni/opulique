@@ -1,0 +1,9 @@
+{
+  "message": "Failed query: select \"id\", \"order_number\", \"customer_name\", \"customer_email\", \"customer_phone\", \"shipping_address\", \"city\", \"payment_method\", \"subtotal\", \"delivery_fee\", \"discount\", \"total\", \"voucher_code\", \"status\", \"items\", \"notes\", \"tracking_number\", \"courier_name\", \"payment_proof\", \"created_at\", \"updated_at\" from \"orders\" order by \"orders\".\"created_at\" desc limit $1\nparams: 5",
+  "stack": "Error: Failed query: select \"id\", \"order_number\", \"customer_name\", \"customer_email\", \"customer_phone\", \"shipping_address\", \"city\", \"payment_method\", \"subtotal\", \"delivery_fee\", \"discount\", \"total\", \"voucher_code\", \"status\", \"items\", \"notes\", \"tracking_number\", \"courier_name\", \"payment_proof\", \"created_at\", \"updated_at\" from \"orders\" order by \"orders\".\"created_at\" desc limit $1\nparams: 5\n    at NeonPreparedQuery.queryWithCache (A:\\PROJEKTS\\products\\New folder\\footfits\\node_modules\\src\\pg-core\\session.ts:73:11)\n    at async NeonPreparedQuery.execute (A:\\PROJEKTS\\products\\New folder\\footfits\\node_modules\\src\\neon-serverless\\session.ts:152:18)\n    at async checkOrders (A:\\PROJEKTS\\products\\New folder\\footfits\\check-orders-v2.ts:11:30)",
+  "query": "select \"id\", \"order_number\", \"customer_name\", \"customer_email\", \"customer_phone\", \"shipping_address\", \"city\", \"payment_method\", \"subtotal\", \"delivery_fee\", \"discount\", \"total\", \"voucher_code\", \"status\", \"items\", \"notes\", \"tracking_number\", \"courier_name\", \"payment_proof\", \"created_at\", \"updated_at\" from \"orders\" order by \"orders\".\"created_at\" desc limit $1",
+  "params": [
+    5
+  ],
+  "cause": {}
+}
